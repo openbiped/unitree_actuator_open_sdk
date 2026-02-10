@@ -1,6 +1,7 @@
-# unitree_actuator_open_sdk
+# unitree-actuator-open-sdk
 
-This repository provides a **Unitree Actuator SDK compatible** C++ and Python API
+This repository provides a **Unitree Actuator SDK compatible** C++ and Python API.
+It is in no way affiliated with Unitree. Use at your own discretion.
 
 ## Notice
 
