@@ -1,0 +1,17 @@
+[project]
+name = "unitree_actuator_open_sdk_test"
+version = "0.0.0"
+requires-python = ">=3.8"
+dependencies = [
+  "unitree-actuator-open-sdk>=0.1.0",
+]
+
+[[tool.uv.index]]
+name = "local-pywheels"
+url = "../build/wheels"
+format = "flat"
+explicit = true
+
+# Pin local index
+[tool.uv.sources]
+unitree-actuator-open-sdk = { index = "local-pywheels" }

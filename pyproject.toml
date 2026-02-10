@@ -1,0 +1,31 @@
+[build-system]
+requires = [
+  "scikit-build-core>=0.10",
+  "pybind11"
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "unitree_actuator_open_sdk"
+version = "0.1.0"
+readme = "README.md"
+description = "Unitree Actuator SDK compatible Python bindings"
+requires-python = ">= 3.8"
+authors = [{ name = "Mimir Reynisson" }]
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+wheel.expand-macos-universal-tags = true
+
+[tool.cibuildwheel]
+build-frontend = "build[uv]"
