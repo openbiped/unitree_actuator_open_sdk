@@ -6,7 +6,6 @@
 #if !defined(GOVERSION) || (GOVERSION!=1 && GOVERSION!=2)
   #error GOVERSION must be defined to be either 1 or 2
 #endif
-#define GOVERSION_STR(vers) "Go"#vers
 
 static void usage(const char* argv0) {
     printf("Go Motor ID change tool.\n");
@@ -83,7 +82,7 @@ int main(int argc, const char* argv[]) {
         return 1;
     }
     usleep(500);
-}
+  }
 
   printf("SUCCESS\n");
   return 0;
